@@ -1,19 +1,17 @@
+# Randomized Adversarial Training
+Code for CVPR 2023 Paper **'Randomized Adversarial Training via Taylor Expansion'**  
+
 # Requisite
 Python 3.6+  
 Pytorch 1.8.1+cu111
 Torchvision 0.9.0+cu111
 
 # How to use
-Run train_first_second.py
+Run train_first_second.py  
+We got the best performance between epoch 100-200
 
-
-
-
-
-
-
-
-
+# Evaluation
+PGD and CW evaluation with epsilon=0.031. Auto attack evaluation is under standard version with epsilon=8/255.
 
 # Reference Code
 [1] AT: https://github.com/locuslab/robust_overfitting  
