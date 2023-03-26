@@ -1,5 +1,5 @@
 # Randomized Adversarial Training
-Code for CVPR 2023 Paper **'Randomized Adversarial Training via Taylor Expansion'**  
+Code for CVPR 2023 Paper [**'Randomized Adversarial Training via Taylor Expansion'**](https://arxiv.org/abs/2303.10653)
 
 # Requisite
 Python 3.6+  
