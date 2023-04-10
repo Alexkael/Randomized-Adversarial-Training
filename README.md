@@ -23,3 +23,12 @@ PGD and CW evaluation with epsilon=0.031. Auto attack evaluation is under standa
 [5] AWP: https://github.com/csdongxian/AWP  
 [6] AVMixup: https://github.com/hirokiadachi/Adversarial-vertex-mixup-pytorch  
 [7] S2O: https://github.com/Alexkael/S2O
+
+# Citation
+**If you find our paper and repo useful, please cite our paper:**  
+@article{jin2023randomized,  
+  title={Randomized Adversarial Training via Taylor Expansion},  
+  author={Jin, Gaojie and Yi, Xinping and Wu, Dengyu and Mu, Ronghui and Huang, Xiaowei},  
+  journal={arXiv preprint arXiv:2303.10653},  
+  year={2023}  
+}
