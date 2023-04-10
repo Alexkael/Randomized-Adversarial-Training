@@ -9,11 +9,12 @@
 ![正常大小的圆角矩形](https://img.shields.io/badge/Torchvision-0.9.0+cu111-green.svg)  
 
 # How to use
-Run train_first_second.py  
-We got the best performance between epoch 100-200
+Run AWP_first_second/train_first_second.py for randomized adversarial training based on AWP-TRADES.   
+Run TRADES_first_second/train_first_second.py for randomized adversarial training based on TRADES.  
 
 # Evaluation
-PGD and CW evaluation with epsilon=0.031. Auto attack evaluation is under standard version with epsilon=8/255.
+PGD and CW evaluation with epsilon=0.031. Auto attack evaluation is under standard version with epsilon=8/255.  
+We got the best performance between epoch 100-200.  
 
 # Reference Code
 [1] AT: https://github.com/locuslab/robust_overfitting  
