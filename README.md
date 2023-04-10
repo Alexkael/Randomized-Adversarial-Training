@@ -1,10 +1,12 @@
-# Randomized Adversarial Training
-Code for CVPR 2023 Paper [**'Randomized Adversarial Training via Taylor Expansion'**](https://arxiv.org/abs/2303.10653)
+# <p align="center">Randomized Adversarial Training</p>
+[![Arxiv](https://img.shields.io/badge/Arxiv-red.svg)](https://arxiv.org/abs/2303.10653)
+[![Pub](https://img.shields.io/badge/Pub-CVPR'23-blue.svg)](https://arxiv.org/abs/2303.10653)
+![License](https://img.shields.io/badge/license-MIT-yellow)
 
 # Requisite
-Python 3.6+  
-Pytorch 1.8.1+cu111
-Torchvision 0.9.0+cu111
+![正常大小的圆角矩形](https://img.shields.io/badge/Python-3.6+-green.svg)  
+![正常大小的圆角矩形](https://img.shields.io/badge/Pytorch-1.8.1+cu111-green.svg)  
+![正常大小的圆角矩形](https://img.shields.io/badge/Torchvision-0.9.0+cu111-green.svg)  
 
 # How to use
 Run train_first_second.py  
