@@ -9,12 +9,24 @@
 ![正常大小的圆角矩形](https://img.shields.io/badge/Torchvision-0.9.0+cu111-green.svg)  
 
 # How to use
-Run AWP_first_second/train_first_second.py for randomized adversarial training based on AWP-TRADES (CIFAR-10/100).  
-Run TRADES_first_second/train_first_second.py for randomized adversarial training based on TRADES (CIFAR-10/100).  
+Randomized adversarial training based on AWP-TRADES (CIFAR-10/100):   
+````
+python AWP_first_second/train_first_second.py
+````
+Randomized adversarial training based on TRADES (CIFAR-10/100):  
+````
+python TRADES_first_second/train_first_second.py
+````
 
 # Evaluation
-PGD and CW evaluation with epsilon=0.031 (eval_attack.py).   
-Auto attack evaluation is under standard version with epsilon=8/255 (eval_autoattack.py).    
+PGD and CW evaluation with epsilon=0.031:   
+````
+python eval_attack.py
+````
+Auto attack evaluation is under standard version with epsilon=8/255:    
+````
+python eval_autoattack.py
+````
 We got the best performance between epoch 100-200.  
 
 # Reference Code
