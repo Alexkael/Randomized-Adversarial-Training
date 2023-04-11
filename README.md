@@ -1,5 +1,5 @@
 # <p align="center">Randomized Adversarial Training</p>
-[![Arxiv](https://img.shields.io/badge/Arxiv-red.svg)](https://arxiv.org/abs/2303.10653)
+[![Arxiv](https://img.shields.io/badge/Arxiv-2303.10653-red.svg)](https://arxiv.org/abs/2303.10653)
 [![Pub](https://img.shields.io/badge/Pub-CVPR'23-blue.svg)](https://arxiv.org/abs/2303.10653)
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 
