@@ -43,6 +43,6 @@ We got the best performance between epoch 100-200.
 @article{jin2023randomized,  
   title={Randomized Adversarial Training via Taylor Expansion},  
   author={Jin, Gaojie and Yi, Xinping and Wu, Dengyu and Mu, Ronghui and Huang, Xiaowei},  
-  journal={arXiv preprint arXiv:2303.10653},  
+  journal={CVPR 2023},  
   year={2023}  
 }
