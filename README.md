@@ -18,6 +18,8 @@ Randomized adversarial training based on TRADES (CIFAR-10/100):
 python TRADES_first_second/train_first_second.py
 ````
 
+Note that we implement First and Second Taylor terms with an approximation method described in Appendix D of the paper. We use Hadamard product to replace Kronecker product when computing second Taylor terms.
+
 # Evaluation
 PGD and CW evaluation with epsilon=0.031:   
 ````
