@@ -61,7 +61,7 @@ def trades_loss(model,
     for name, param in model.named_parameters():
         if name == 'fc.weight':
             tl1_natural = abs(torch.sum(param.grad,1))
-            tl2_natural = torch.sum(param.grad,1)**2
+            tl2_natural = torch.sum(param.grad,1)**2   #use Hadamard product to replace Kronecker product
             
     optimizer.zero_grad()
     loss_adv = F.cross_entropy(model(x_adv), y)
@@ -69,7 +69,7 @@ def trades_loss(model,
     for name, param in model.named_parameters():
         if name == 'fc.weight':
             tl1_adv = abs(torch.sum(param.grad,1))
-            tl2_adv = torch.sum(param.grad,1)**2
+            tl2_adv = torch.sum(param.grad,1)**2   #use Hadamard product to replace Kronecker product
     
     def reg_gap(tl_gap):
         tl_gap = tl_gap-torch.min(tl_gap)
