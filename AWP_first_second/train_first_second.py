@@ -191,7 +191,7 @@ def train(model, train_loader, optimizer, epoch, awp_adversary):
         optimizer.zero_grad()
         output = model(x_natural)
         output_adv = model(x_adv)
-        
+        ###############################approximately train on Taylor terms (ref Ineq. (8) andAppendix D)##############################
         optimizer.zero_grad()
         # calculate robust loss
         loss_natural = F.cross_entropy(output, target)
@@ -251,7 +251,7 @@ def train(model, train_loader, optimizer, epoch, awp_adversary):
         
         first_loss = 0.5*(loss_tl1+loss_tl1_)
         second_loss = 0.5*(loss_tl2+loss_tl2_)
-
+        ################################################################################################################
         loss = loss_natural*(1-args.alpha) + args.beta*loss_robust + args.alpha*first_loss + args.alpha*0.5*second_loss
 
         prec1, prec5 = accuracy(output_adv, target, topk=(1, 5))
