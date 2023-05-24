@@ -58,6 +58,7 @@ def trades_loss(model,
     # calculate robust loss
     loss_natural = F.cross_entropy(model(x_natural), y)
     loss_natural.backward(retain_graph=True)
+    ###############################approximately train on Taylor terms (ref Ineq. (8) and Appendix D)##############################
     for name, param in model.named_parameters():
         if name == 'fc.weight':
             tl1_natural = abs(torch.sum(param.grad,1))
@@ -112,7 +113,7 @@ def trades_loss(model,
     
     first_loss = 0.5*(loss_tl1+loss_tl1_)
     second_loss = 0.5*(loss_tl2+loss_tl2_)
-    
+    ##################################################################################################################
     loss = loss_natural*(1-alpha) + alpha*first_loss + 0.5*alpha*second_loss + beta * loss_robust 
     return loss
 
